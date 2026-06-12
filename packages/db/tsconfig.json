@@ -1,0 +1,9 @@
+{
+  "extends": "@unsone/typescript-config/internal.json",
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

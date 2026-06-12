@@ -1,0 +1,33 @@
+{
+  "name": "unsone",
+  "private": true,
+  "packageManager": "pnpm@11.6.0",
+  "engines": {
+    "node": "^24.16.0",
+    "pnpm": "^11.6.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo run clean",
+    "db:push": "turbo --filter=@unsone/db db:push",
+    "db:studio": "turbo --filter=@unsone/db db:studio",
+    "db:migrate": "turbo --filter=@unsone/db db:migrate",
+    "db:generate": "turbo --filter=@unsone/db db:generate",
+    "db:run:local": "docker compose -f docker-compose.yml up -d",
+    "dev": "turbo watch dev --continue",
+    "lint": "turbo run lint --continue -- --cache --cache-location .cache/.eslintcache",
+    "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
+    "lint:sherif": "pnpm dlx sherif@latest",
+    "postinstall": "pnpm lint:sherif",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "dotenv-cli": "^11.0.0",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "turbo": "^2.9.18",
+    "typescript": "catalog:"
+  }
+}

@@ -1,0 +1,23 @@
+shellEmulator: true
+
+# eslint-disable-next-line pnpm/yaml-enforce-settings, yaml/plain-scalar
+trustPolicy: "off"
+
+packages:
+  - "packages/*"
+  - "tools/*"
+
+overrides:
+  lightningcss: 1.30.1
+
+catalog:
+  "@antfu/eslint-config": ^7.7.3
+  "@t3-oss/env-core": ^0.13.11
+  "@types/node": ^22.19.20
+  eslint: ^9.39.4
+  eslint-plugin-format: ^2.0.1
+  typescript: ^5.9.3
+  zod: ^4.4.3
+
+allowBuilds:
+  esbuild: true

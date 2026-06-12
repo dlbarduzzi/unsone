@@ -1,1 +1,5 @@
 # Unsone
+
+## License
+
+[MIT](./LICENSE)
