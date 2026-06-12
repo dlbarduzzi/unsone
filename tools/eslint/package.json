@@ -6,7 +6,8 @@
     "./base": "./base.js",
     "./root": "./root.js",
     "./auth": "./auth.js",
-    "./db": "./db.js"
+    "./db": "./db.js",
+    "./trpc": "./trpc.js"
   },
   "scripts": {
     "clean": "git clean -xdf .cache .turbo node_modules",

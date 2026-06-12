@@ -1,0 +1,31 @@
+{
+  "name": "@unsone/trpc",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./core": "./src/trpc.ts",
+    "./root": "./src/root.ts",
+    "./types": "./src/types.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "tsc",
+    "lint": "eslint --flag unstable_native_nodejs_ts_config",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@trpc/server": "catalog:",
+    "@unsone/auth": "workspace:*",
+    "@unsone/db": "workspace:*",
+    "superjson": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@unsone/eslint-config": "workspace:*",
+    "@unsone/typescript-config": "workspace:*",
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}
