@@ -58,6 +58,7 @@
     }
   },
   "globalEnv": [
+    "LOG_LEVEL",
     "DATABASE_URL",
     "AUTH_URL",
     "AUTH_SECRET",

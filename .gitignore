@@ -13,6 +13,7 @@ coverage
 .swc/
 out/
 build
+next-env.d.ts
 
 # expo
 .expo

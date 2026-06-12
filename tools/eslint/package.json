@@ -7,7 +7,8 @@
     "./root": "./root.js",
     "./auth": "./auth.js",
     "./db": "./db.js",
-    "./trpc": "./trpc.js"
+    "./trpc": "./trpc.js",
+    "./server": "./server.js"
   },
   "scripts": {
     "clean": "git clean -xdf .cache .turbo node_modules",

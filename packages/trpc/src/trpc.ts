@@ -45,7 +45,7 @@ const durationMiddleware = t.middleware(async ({ path, next }) => {
   const date = new Date().toISOString()
 
   // eslint-disable-next-line no-console
-  console.log(`${date} - TRPC ${path} took ${end - start}ms to execute`)
+  console.log(`${date} [INFO] TRPC ${path} took ${end - start}ms to execute`)
 
   return res
 })

@@ -4,7 +4,7 @@ import { betterAuth } from "better-auth"
 import { drizzleAdapter } from "better-auth/adapters/drizzle"
 
 type AuthOptions = {
-  isDev: string
+  isDev: boolean
   baseUrl: string
   secret: string
   githubClientId: string

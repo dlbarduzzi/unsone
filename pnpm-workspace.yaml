@@ -4,6 +4,7 @@ shellEmulator: true
 trustPolicy: "off"
 
 packages:
+  - "apps/*"
   - "packages/*"
   - "tools/*"
 
@@ -23,5 +24,10 @@ catalog:
   typescript: ^5.9.3
   zod: ^4.4.3
 
+catalogs:
+  react19:
+    "@types/react": ~19.2.17
+
 allowBuilds:
   esbuild: true
+  sharp: true

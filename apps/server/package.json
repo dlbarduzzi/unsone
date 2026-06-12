@@ -1,0 +1,34 @@
+{
+  "name": "@unsone/server",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "pnpm with-env next build",
+    "clean": "git clean -xdf .cache .next .turbo node_modules",
+    "dev": "pnpm with-env next dev",
+    "lint": "eslint --flag unstable_native_nodejs_ts_config",
+    "start": "pnpm with-env next start",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@t3-oss/env-nextjs": "^0.13.11",
+    "@trpc/server": "catalog:",
+    "@unsone/auth": "workspace:*",
+    "@unsone/db": "workspace:*",
+    "@unsone/trpc": "workspace:*",
+    "better-auth": "catalog:",
+    "next": "16.2.9",
+    "server-only": "^0.0.1",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react19",
+    "@unsone/eslint-config": "workspace:*",
+    "@unsone/typescript-config": "workspace:*",
+    "eslint": "catalog:",
+    "jiti": "^2.7.0",
+    "typescript": "catalog:"
+  }
+}
