@@ -1,0 +1,25 @@
+{
+  "name": "@unsone/eslint-config",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./base": "./base.js",
+    "./root": "./root.js",
+    "./auth": "./auth.js",
+    "./db": "./db.js"
+  },
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo node_modules",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "eslint-plugin-format": "catalog:"
+  },
+  "devDependencies": {
+    "@unsone/typescript-config": "workspace:*",
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}

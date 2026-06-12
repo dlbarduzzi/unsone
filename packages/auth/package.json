@@ -19,11 +19,10 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "catalog:",
     "@types/node": "catalog:",
+    "@unsone/eslint-config": "workspace:*",
     "@unsone/typescript-config": "workspace:*",
     "eslint": "catalog:",
-    "eslint-plugin-format": "catalog:",
     "typescript": "catalog:"
   }
 }

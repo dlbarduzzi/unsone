@@ -24,12 +24,11 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "catalog:",
     "@types/node": "catalog:",
+    "@unsone/eslint-config": "workspace:*",
     "@unsone/typescript-config": "workspace:*",
     "drizzle-kit": "^0.31.10",
     "eslint": "catalog:",
-    "eslint-plugin-format": "catalog:",
     "typescript": "catalog:"
   }
 }

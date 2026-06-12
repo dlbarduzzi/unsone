@@ -1,0 +1,10 @@
+{
+  "extends": "@unsone/typescript-config/base.json",
+  "include": [
+    "*.js",
+    "eslint.config.mjs"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

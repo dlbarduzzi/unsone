@@ -1,16 +1,3 @@
-import antfu from "@antfu/eslint-config"
+import config from "@unsone/eslint-config/root"
 
-export default antfu({
-  type: "lib",
-  typescript: true,
-  formatters: true,
-  stylistic: {
-    semi: false,
-    indent: 2,
-    quotes: "double",
-  },
-  ignores: ["node_modules/**"],
-  rules: {
-    "pnpm/json-enforce-catalog": "off",
-  },
-})
+export default config

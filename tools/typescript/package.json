@@ -1,10 +1,7 @@
 {
   "name": "@unsone/typescript-config",
-  "version": "0.0.0",
+  "type": "module",
   "private": true,
-  "publishConfig": {
-    "access": "public"
-  },
   "exports": {
     "./base.json": "./base.json",
     "./internal.json": "./internal.json"

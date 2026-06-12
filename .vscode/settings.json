@@ -10,6 +10,16 @@
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
+  // Restart the eslint server when the shared eslint configs change,
+  // since the server caches imported config modules until restarted.
+  // Requires the "pucelle.run-on-save" extension.
+  "runOnSave.commands": [
+    {
+      "runIn": "vscode",
+      "command": "eslint.restart",
+      "globMatch": "**/tools/eslint/*.js"
+    }
+  ],
   "files.associations": {
     "*.css": "tailwindcss"
   },

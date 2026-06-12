@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "dbaeumer.vscode-eslint",
+    "pucelle.run-on-save",
     "expo.vscode-expo-tools",
     "yoavbls.pretty-ts-errors",
     "bradlc.vscode-tailwindcss"
