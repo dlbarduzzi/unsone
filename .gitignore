@@ -17,6 +17,8 @@ next-env.d.ts
 
 # expo
 .expo
+expo-env.d.ts
+apps/mobile/.gitignore
 
 # typescript
 .cache

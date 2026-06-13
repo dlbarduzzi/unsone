@@ -28,6 +28,7 @@
     "@unsone/eslint-config": "workspace:*",
     "@unsone/typescript-config": "workspace:*",
     "eslint": "catalog:",
+    "eslint-config-expo": "catalog:",
     "jiti": "^2.7.0",
     "typescript": "catalog:"
   }
