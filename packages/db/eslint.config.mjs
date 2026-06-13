@@ -1,3 +1,5 @@
-import config from "@unsone/eslint-config/db"
+import { config } from "@unsone/eslint-config/config"
 
-export default config
+export default config({
+  ignores: ["src/migrations/**"],
+})

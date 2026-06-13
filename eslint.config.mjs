@@ -1,3 +1,3 @@
-import config from "@unsone/eslint-config/root"
+import { config } from "@unsone/eslint-config/config"
 
-export default config
+export default config()

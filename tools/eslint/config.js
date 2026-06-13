@@ -30,7 +30,7 @@ const baseRules = {
 }
 
 /** @type {typeof antfu} */
-export function base(options = {}, ...userConfigs) {
+export function config(options = {}, ...userConfigs) {
   const { ignores = [] } = options
   return antfu({
     type: "lib",

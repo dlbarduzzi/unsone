@@ -1,10 +1,10 @@
-import { base } from "@unsone/eslint-config/base"
+import { config } from "@unsone/eslint-config/config"
 import { createRequire } from "node:module"
 
 const require = createRequire(import.meta.url)
 const expoConfig = require("eslint-config-expo/flat")
 
-export default base(
+export default config(
   {
     type: "app",
     // Expo config handles React, React Native, and import rules.
@@ -13,6 +13,6 @@ export default base(
   },
   ...expoConfig,
   {
-    ignores: ["dist/*"],
+    ignores: ["dist/*", ".expo"],
   },
 )
