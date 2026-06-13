@@ -1,5 +1,7 @@
 import type { ConfigContext, ExpoConfig } from "expo/config"
 
+import { env } from "./src/lib/env.ts"
+
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: "Unsone",
@@ -41,5 +43,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   experiments: {
     typedRoutes: true,
     reactCompiler: true,
+  },
+  extra: {
+    apiUrl: env.EXPO_PUBLIC_API_URL,
   },
 })

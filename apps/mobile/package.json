@@ -4,17 +4,24 @@
   "main": "expo-router/entry",
   "scripts": {
     "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
-    "dev": "expo start",
-    "dev:android": "expo start --android",
-    "dev:ios": "expo start --ios",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "dev": "pnpm with-env expo start",
+    "dev:android": "pnpm with-env expo start --android",
+    "dev:ios": "pnpm with-env expo start --ios",
+    "android": "pnpm with-env expo run:android",
+    "ios": "pnpm with-env expo run:ios",
     "lint": "eslint --flag unstable_native_nodejs_ts_config",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "@better-auth/expo": "catalog:",
     "@expo/ui": "~56.0.17",
+    "@t3-oss/env-core": "catalog:",
+    "@tanstack/react-query": "catalog:",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "@trpc/tanstack-react-query": "catalog:",
+    "better-auth": "catalog:",
     "expo": "~56.0.11",
     "expo-constants": "~56.0.18",
     "expo-device": "~56.0.4",
@@ -22,7 +29,9 @@
     "expo-glass-effect": "~56.0.4",
     "expo-image": "~56.0.11",
     "expo-linking": "~56.0.14",
+    "expo-network": "^56.0.5",
     "expo-router": "~56.2.10",
+    "expo-secure-store": "^56.0.4",
     "expo-splash-screen": "~56.0.10",
     "expo-status-bar": "~56.0.4",
     "expo-symbols": "~56.0.6",
@@ -38,7 +47,9 @@
     "react-native-safe-area-context": "~5.7.0",
     "react-native-screens": "4.25.2",
     "react-native-web": "~0.21.0",
-    "react-native-worklets": "0.8.3"
+    "react-native-worklets": "0.8.3",
+    "superjson": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.0",

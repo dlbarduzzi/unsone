@@ -14,5 +14,8 @@ export default config(
   ...expoConfig,
   {
     ignores: ["dist/*", ".expo"],
+    rules: {
+      "import/no-named-as-default": "off",
+    },
   },
 )

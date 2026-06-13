@@ -15,7 +15,16 @@ catalogs:
     '@t3-oss/env-core':
       specifier: ^0.13.11
       version: 0.13.11
+    '@tanstack/react-query':
+      specifier: ^5.101.0
+      version: 5.101.0
+    '@trpc/client':
+      specifier: ^11.17.0
+      version: 11.17.0
     '@trpc/server':
+      specifier: ^11.17.0
+      version: 11.17.0
+    '@trpc/tanstack-react-query':
       specifier: ^11.17.0
       version: 11.17.0
     '@types/node':
@@ -80,10 +89,28 @@ importers:
     dependencies:
       '@better-auth/expo':
         specifier: 'catalog:'
-        version: 1.6.11(@better-auth/core@1.6.11(@better-auth/utils@0.4.0)(@better-fetch/fetch@1.1.21)(better-call@1.3.5(zod@4.4.3))(jose@6.2.3)(kysely@0.28.17)(nanostores@1.3.0))(better-auth@1.6.11(drizzle-kit@0.31.10)(drizzle-orm@0.45.2(kysely@0.28.17)(postgres@3.4.9))(next@16.2.9(@babel/core@7.29.7)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(expo-constants@56.0.18)(expo-linking@56.0.14)(expo-web-browser@56.0.5(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3)))
+        version: 1.6.11(@better-auth/core@1.6.11(@better-auth/utils@0.4.0)(@better-fetch/fetch@1.1.21)(better-call@1.3.5(zod@4.4.3))(jose@6.2.3)(kysely@0.28.17)(nanostores@1.3.0))(better-auth@1.6.11(drizzle-kit@0.31.10)(drizzle-orm@0.45.2(kysely@0.28.17)(postgres@3.4.9))(next@16.2.9(@babel/core@7.29.7)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(expo-constants@56.0.18)(expo-linking@56.0.14)(expo-network@56.0.5(expo@56.0.11)(react@19.2.3))(expo-web-browser@56.0.5(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3)))
       '@expo/ui':
         specifier: ~56.0.17
         version: 56.0.17(@babel/core@7.29.7)(@types/react@19.2.17)(expo@56.0.11)(react-dom@19.2.3(react@19.2.3))(react-native-reanimated@4.3.1(react-native-worklets@0.8.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native-worklets@0.8.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)
+      '@t3-oss/env-core':
+        specifier: 'catalog:'
+        version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
+      '@tanstack/react-query':
+        specifier: 'catalog:'
+        version: 5.101.0(react@19.2.3)
+      '@trpc/client':
+        specifier: 'catalog:'
+        version: 11.17.0(@trpc/server@11.17.0(typescript@5.9.3))(typescript@5.9.3)
+      '@trpc/server':
+        specifier: 'catalog:'
+        version: 11.17.0(typescript@5.9.3)
+      '@trpc/tanstack-react-query':
+        specifier: 'catalog:'
+        version: 11.17.0(@tanstack/react-query@5.101.0(react@19.2.3))(@trpc/client@11.17.0(@trpc/server@11.17.0(typescript@5.9.3))(typescript@5.9.3))(@trpc/server@11.17.0(typescript@5.9.3))(react@19.2.3)(typescript@5.9.3)
+      better-auth:
+        specifier: 'catalog:'
+        version: 1.6.11(drizzle-kit@0.31.10)(drizzle-orm@0.45.2(kysely@0.28.17)(postgres@3.4.9))(next@16.2.9(@babel/core@7.29.7)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       expo:
         specifier: ~56.0.11
         version: 56.0.11(@babel/core@7.29.7)(@expo/dom-webview@56.0.5)(@expo/metro-runtime@56.0.15)(expo-router@56.2.10)(react-dom@19.2.3(react@19.2.3))(react-native-web@0.21.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-native-worklets@0.8.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)(typescript@5.9.3)
@@ -105,9 +132,15 @@ importers:
       expo-linking:
         specifier: ~56.0.14
         version: 56.0.14(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)
+      expo-network:
+        specifier: ^56.0.5
+        version: 56.0.5(expo@56.0.11)(react@19.2.3)
       expo-router:
         specifier: ~56.2.10
         version: 56.2.10(9357873bd66b11bc0f92aecdb3699036)
+      expo-secure-store:
+        specifier: ^56.0.4
+        version: 56.0.4(expo@56.0.11)
       expo-splash-screen:
         specifier: ~56.0.10
         version: 56.0.10(expo@56.0.11)(typescript@5.9.3)
@@ -156,6 +189,12 @@ importers:
       react-native-worklets:
         specifier: 0.8.3
         version: 0.8.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)
+      superjson:
+        specifier: 'catalog:'
+        version: 2.2.6
+      zod:
+        specifier: 'catalog:'
+        version: 4.4.3
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4.3.0
@@ -250,7 +289,7 @@ importers:
     dependencies:
       '@better-auth/expo':
         specifier: 'catalog:'
-        version: 1.6.11(@better-auth/core@1.6.11(@better-auth/utils@0.4.0)(@better-fetch/fetch@1.1.21)(better-call@1.3.5(zod@4.4.3))(jose@6.2.3)(kysely@0.28.17)(nanostores@1.3.0))(better-auth@1.6.11(drizzle-kit@0.31.10)(drizzle-orm@0.45.2(kysely@0.28.17)(postgres@3.4.9))(next@16.2.9(@babel/core@7.29.7)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(expo-constants@56.0.18)(expo-linking@56.0.14)(expo-web-browser@56.0.5(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3)))
+        version: 1.6.11(@better-auth/core@1.6.11(@better-auth/utils@0.4.0)(@better-fetch/fetch@1.1.21)(better-call@1.3.5(zod@4.4.3))(jose@6.2.3)(kysely@0.28.17)(nanostores@1.3.0))(better-auth@1.6.11(drizzle-kit@0.31.10)(drizzle-orm@0.45.2(kysely@0.28.17)(postgres@3.4.9))(next@16.2.9(@babel/core@7.29.7)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(expo-constants@56.0.18)(expo-linking@56.0.14)(expo-network@56.0.5(expo@56.0.11)(react@19.2.3))(expo-web-browser@56.0.5(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3)))
       '@t3-oss/env-core':
         specifier: 'catalog:'
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
@@ -2565,6 +2604,14 @@ packages:
   '@tailwindcss/postcss@4.3.0':
     resolution: {integrity: sha512-Jm05Tjx+9yCLGv5qw1c+84Psds8MnyrEQYCB+FFk2lgGiUjlRqdxke4mVTuYrj2xnVZqKim2Apr5ySuQRYAw/w==}
 
+  '@tanstack/query-core@5.101.0':
+    resolution: {integrity: sha512-cQetA74EB+seWySv1TTKr828TnP0u39m6LykwDXIo84SNortpDkp30TMEjkqtYCNP9c40uT/iwl6MLiufEt0Ow==}
+
+  '@tanstack/react-query@5.101.0':
+    resolution: {integrity: sha512-rLlJXSpkqfizLWgkR5+eLeIk0MvTx/meEIR7LRjxic+qxiQP8zVjq7BqQkiCMNLQBlLfuOLqqr6KO5GtrDlmSg==}
+    peerDependencies:
+      react: ^18 || ^19
+
   '@testing-library/dom@10.4.1':
     resolution: {integrity: sha512-o4PXJQidqJl82ckFaXUeoAW+XysPLauYI43Abki5hABd853iMhitooc6znOnczgbTYmEP6U6/y1ZyKAIsvMKGg==}
     engines: {node: '>=18'}
@@ -2579,10 +2626,27 @@ packages:
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
 
+  '@trpc/client@11.17.0':
+    resolution: {integrity: sha512-KpJBFrbKTDeVCFv/3ckL1XBBH5Yssn8hethI/rUy7GIpTj+VzjtPjykDqJpzobuVOz+d26cXCSu1t4I6MYI5Zg==}
+    hasBin: true
+    peerDependencies:
+      '@trpc/server': 11.17.0
+      typescript: '>=5.7.2'
+
   '@trpc/server@11.17.0':
     resolution: {integrity: sha512-jbAOUe0PpUTCYqziyu+8vYXZdDXPudZgnEhWCQ2NjKnVEjfE93RqHTt1oycZJv/HNf51YlRXfEEwSIAbb161rw==}
     hasBin: true
     peerDependencies:
+      typescript: '>=5.7.2'
+
+  '@trpc/tanstack-react-query@11.17.0':
+    resolution: {integrity: sha512-OFxjvCgisP0yaCj7lgP6qPaFwJvJDgnrAUxH3cNIPPR89TpYbndn5vsdKNkc7EnvER9b6wq9Yz8aCcPcOBpDXg==}
+    hasBin: true
+    peerDependencies:
+      '@tanstack/react-query': ^5.80.3
+      '@trpc/client': 11.17.0
+      '@trpc/server': 11.17.0
+      react: '>=18.2.0'
       typescript: '>=5.7.2'
 
   '@turbo/darwin-64@2.9.18':
@@ -4090,6 +4154,12 @@ packages:
     peerDependencies:
       react-native: '*'
 
+  expo-network@56.0.5:
+    resolution: {integrity: sha512-zmuyO95jayDY9jyUfOAlNp9XXJrJaAOkBXXLy0TS/nh2kppj7CHirRPkQ/tf0rsxhIL3AEd9nsRTiPtNsGT9Lw==}
+    peerDependencies:
+      expo: '*'
+      react: '*'
+
   expo-router@56.2.10:
     resolution: {integrity: sha512-u7WcdsFAjSrQS7Bdb1VbNPE3xNcd/BZ6qXSS31UAJKhaYIb+ik3jJSy/W5kY3qKipwbwlo3CSb1WnZ2XYs7F+Q==}
     peerDependencies:
@@ -4121,6 +4191,11 @@ packages:
         optional: true
       react-server-dom-webpack:
         optional: true
+
+  expo-secure-store@56.0.4:
+    resolution: {integrity: sha512-hjEi/gmpdFFJ9lYbdp3k3p/WchV7Gi0Qt8jt/m/0WJadqQrskafHAlDxbZkII1cN3Yd7zp9Lvkeq3UfGhSwirQ==}
+    peerDependencies:
+      expo: '*'
 
   expo-server@56.0.5:
     resolution: {integrity: sha512-SmM2p2g3Jrktpiazcst+OxhjSzOHXKAY4BPURHYHXvApzzoybMmrNF4IEZ8DKZ145BhSe4ydAmlEFCRTsdtgUQ==}
@@ -6915,7 +6990,7 @@ snapshots:
     optionalDependencies:
       drizzle-orm: 0.45.2(kysely@0.28.17)(postgres@3.4.9)
 
-  '@better-auth/expo@1.6.11(@better-auth/core@1.6.11(@better-auth/utils@0.4.0)(@better-fetch/fetch@1.1.21)(better-call@1.3.5(zod@4.4.3))(jose@6.2.3)(kysely@0.28.17)(nanostores@1.3.0))(better-auth@1.6.11(drizzle-kit@0.31.10)(drizzle-orm@0.45.2(kysely@0.28.17)(postgres@3.4.9))(next@16.2.9(@babel/core@7.29.7)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(expo-constants@56.0.18)(expo-linking@56.0.14)(expo-web-browser@56.0.5(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3)))':
+  '@better-auth/expo@1.6.11(@better-auth/core@1.6.11(@better-auth/utils@0.4.0)(@better-fetch/fetch@1.1.21)(better-call@1.3.5(zod@4.4.3))(jose@6.2.3)(kysely@0.28.17)(nanostores@1.3.0))(better-auth@1.6.11(drizzle-kit@0.31.10)(drizzle-orm@0.45.2(kysely@0.28.17)(postgres@3.4.9))(next@16.2.9(@babel/core@7.29.7)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(expo-constants@56.0.18)(expo-linking@56.0.14)(expo-network@56.0.5(expo@56.0.11)(react@19.2.3))(expo-web-browser@56.0.5(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3)))':
     dependencies:
       '@better-auth/core': 1.6.11(@better-auth/utils@0.4.0)(@better-fetch/fetch@1.1.21)(better-call@1.3.5(zod@4.4.3))(jose@6.2.3)(kysely@0.28.17)(nanostores@1.3.0)
       '@better-fetch/fetch': 1.1.21
@@ -6925,6 +7000,7 @@ snapshots:
     optionalDependencies:
       expo-constants: 56.0.18(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))
       expo-linking: 56.0.14(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)
+      expo-network: 56.0.5(expo@56.0.11)(react@19.2.3)
       expo-web-browser: 56.0.5(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))
 
   '@better-auth/kysely-adapter@1.6.11(@better-auth/core@1.6.11(@better-auth/utils@0.4.0)(@better-fetch/fetch@1.1.21)(better-call@1.3.5(zod@4.4.3))(jose@6.2.3)(kysely@0.28.17)(nanostores@1.3.0))(@better-auth/utils@0.4.0)(kysely@0.28.17)':
@@ -8419,6 +8495,13 @@ snapshots:
       postcss: 8.5.15
       tailwindcss: 4.3.0
 
+  '@tanstack/query-core@5.101.0': {}
+
+  '@tanstack/react-query@5.101.0(react@19.2.3)':
+    dependencies:
+      '@tanstack/query-core': 5.101.0
+      react: 19.2.3
+
   '@testing-library/dom@10.4.1':
     dependencies:
       '@babel/code-frame': 7.29.7
@@ -8443,8 +8526,21 @@ snapshots:
     dependencies:
       '@testing-library/dom': 10.4.1
 
+  '@trpc/client@11.17.0(@trpc/server@11.17.0(typescript@5.9.3))(typescript@5.9.3)':
+    dependencies:
+      '@trpc/server': 11.17.0(typescript@5.9.3)
+      typescript: 5.9.3
+
   '@trpc/server@11.17.0(typescript@5.9.3)':
     dependencies:
+      typescript: 5.9.3
+
+  '@trpc/tanstack-react-query@11.17.0(@tanstack/react-query@5.101.0(react@19.2.3))(@trpc/client@11.17.0(@trpc/server@11.17.0(typescript@5.9.3))(typescript@5.9.3))(@trpc/server@11.17.0(typescript@5.9.3))(react@19.2.3)(typescript@5.9.3)':
+    dependencies:
+      '@tanstack/react-query': 5.101.0(react@19.2.3)
+      '@trpc/client': 11.17.0(@trpc/server@11.17.0(typescript@5.9.3))(typescript@5.9.3)
+      '@trpc/server': 11.17.0(typescript@5.9.3)
+      react: 19.2.3
       typescript: 5.9.3
 
   '@turbo/darwin-64@2.9.18':
@@ -10132,6 +10228,11 @@ snapshots:
     dependencies:
       react-native: 0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3)
 
+  expo-network@56.0.5(expo@56.0.11)(react@19.2.3):
+    dependencies:
+      expo: 56.0.11(@babel/core@7.29.7)(@expo/dom-webview@56.0.5)(@expo/metro-runtime@56.0.15)(expo-router@56.2.10)(react-dom@19.2.3(react@19.2.3))(react-native-web@0.21.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-native-worklets@0.8.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)(typescript@5.9.3)
+      react: 19.2.3
+
   expo-router@56.2.10(9357873bd66b11bc0f92aecdb3699036):
     dependencies:
       '@expo/log-box': 56.0.13(@expo/dom-webview@56.0.5)(expo@56.0.11)(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)
@@ -10182,6 +10283,10 @@ snapshots:
       - expo-font
       - react-native-worklets
       - supports-color
+
+  expo-secure-store@56.0.4(expo@56.0.11):
+    dependencies:
+      expo: 56.0.11(@babel/core@7.29.7)(@expo/dom-webview@56.0.5)(@expo/metro-runtime@56.0.15)(expo-router@56.2.10)(react-dom@19.2.3(react@19.2.3))(react-native-web@0.21.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-native-worklets@0.8.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@react-native/metro-config@0.85.3(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)(typescript@5.9.3)
 
   expo-server@56.0.5: {}
 

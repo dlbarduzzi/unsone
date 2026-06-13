@@ -58,6 +58,7 @@
     }
   },
   "globalEnv": [
+    "EXPO_PUBLIC_API_URL",
     "LOG_LEVEL",
     "DATABASE_URL",
     "AUTH_URL",
